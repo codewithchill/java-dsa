@@ -40,7 +40,14 @@ public class triangle {
       System.out.println();
 
       for (int i = 1; i <= num; i++) {
-        for (int j = i; j <= num; j++)
+        for (int j = i; j <= num; j++) 
+        /* 
+        * [j = i => j <= num] can be mathematically
+        * written as [j = 1 => j <= num - i + 1]
+        * j = i => j <= num
+        * j = 0 => j <= num - i
+        * j = 1 => j <= num - i + 1
+        */
           System.out.print(j + " ");
         System.out.println();
       }
