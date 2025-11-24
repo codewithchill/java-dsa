@@ -25,6 +25,16 @@ public class square {
       }
       System.out.println("------------");
 
+      for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= n; j++) {
+          if (i % 2 == 0)
+            System.out.print((char) (i + 'A' - 1) + "  ");
+          else
+            System.out.print((char) (i + 'a' - 1) + "  ");
+          }
+        System.out.println();
+      }
+      System.out.println("------------");
     }
   }
 }
