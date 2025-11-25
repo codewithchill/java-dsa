@@ -3,7 +3,7 @@ package basics.pattern;
 import java.util.Scanner;
 
 public class triangle {
-    public static void main(String[] args) {
+  public static void main(String[] args) {
     try (Scanner sc = new Scanner(System.in)) {
       System.out.print("Enter a number: ");
       int num = sc.nextInt();
@@ -24,7 +24,7 @@ public class triangle {
 
       for (int i = 1; i <= num; i++) {
         for (int j = 1; j <= i; j++)
-          System.out.print((char)(i + 'A' - 1) + " ");
+          System.out.print((char) (i + 'A' - 1) + " ");
         System.out.println();
       }
       System.out.println();
@@ -32,7 +32,7 @@ public class triangle {
       for (int i = 1; i <= num; i++) {
         for (int j = 1; j <= i; j++)
           if (i % 2 == 0)
-            System.out.print((char)(j + 'A' - 1) + " ");
+            System.out.print((char) (j + 'A' - 1) + " ");
           else
             System.out.print(j + " ");
         System.out.println();
@@ -40,7 +40,7 @@ public class triangle {
       System.out.println();
 
       for (int i = 1; i <= num; i++) {
-        for (int j = i; j <= num; j++) 
+        for (int j = i; j <= num; j++)
           System.out.print(j + " ");
         System.out.println();
       }
@@ -48,14 +48,24 @@ public class triangle {
 
       for (int i = 1; i <= num; i++) {
         for (int j = 1; j <= num - i + 1; j++)
-          System.out.print((char)(i + 'A' - 1) + " ");
+          System.out.print((char) (i + 'A' - 1) + " ");
         System.out.println();
       }
       System.out.println();
 
       for (int i = 1; i <= num; i++) {
         for (int j = 1; j <= num - i + 1; j++)
-          System.out.print((char)(j + 'A' - 1) + " ");
+          System.out.print((char) (j + 'A' - 1) + " ");
+        System.out.println();
+      }
+      System.out.println();
+
+      int count = 1;
+      for (int i = 1; i <= num; i++) {
+        for (int j = 1; j <= i; j++) {
+          System.out.printf("%-4d", count);
+          count++;
+        }
         System.out.println();
       }
       System.out.println();
