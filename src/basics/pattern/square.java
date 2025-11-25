@@ -6,7 +6,7 @@ public class square {
   public static void main(String[] args) {
     try (Scanner sc = new Scanner(System.in)) {
 
-      System.out.print("Enter the number: ");
+      System.out.print("Enter the number(Enter odd number for special figures): ");
       int n = sc.nextInt();
       for (int i = 0; i < n; i++) {
         for (int j = 1; j <= n; j++) {
