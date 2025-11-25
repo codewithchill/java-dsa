@@ -79,7 +79,7 @@ public class triangle {
       }
       System.out.println();
 
-      //* Vertically Flipped Triangle */
+      //* Vertically Flipped Star Triangle */
       for (int i = 1; i <= num; i++) {
         for (int j = 1; j <= num; j++) {
           if (j <= num - i)
@@ -90,6 +90,17 @@ public class triangle {
         System.out.println();
       }
       System.out.println();
+
+      //* Vertically Flipped Number Triangle */
+      for (int i = 1; i <= num; i++) {
+        for (int j = 1; j <= num - i; j++)
+            System.out.print("  ");
+        for (int j = 1; j <= i; j++)
+            System.out.print(j + " ");
+        System.out.println();
+      }
+      System.out.println();
+
     }
   }
 }
