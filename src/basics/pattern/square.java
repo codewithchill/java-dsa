@@ -31,10 +31,43 @@ public class square {
             System.out.print((char) (i + 'A' - 1) + "  ");
           else
             System.out.print((char) (i + 'a' - 1) + "  ");
-          }
+        }
         System.out.println();
       }
       System.out.println("------------");
+
+      if (n % 2 != 0) {
+        for (int i = 1; i <= n; i++) {
+          for (int j = 1; j <= n; j++) {
+            if ((j == (n / 2 + 1)) || (i == (n / 2 + 1)))
+              System.out.print("* ");
+            else
+              System.out.print("  ");
+          }
+          System.out.println();
+        }
+        System.out.println("------------");
+      }
+      if (n % 2 != 0) {
+        // TODO: Print the following pattern for n is odd
+        /*
+            *     *  
+             *   *  
+               *
+             *   *  
+            *     *  
+        */
+        for (int i = 1; i <= n; i++) {
+          for (int j = 1; j <= n; j++) {
+            if (i == j || j == (n - i + 1))
+              System.out.print("* ");
+            else
+              System.out.print("  ");
+          }
+          System.out.println();
+        }
+        System.out.println("------------");
+      }
     }
   }
 }
