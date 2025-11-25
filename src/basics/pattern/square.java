@@ -49,7 +49,7 @@ public class square {
         System.out.println("------------");
       }
       if (n % 2 != 0) {
-        // TODO: Print the following pattern for n is odd
+        //? Print the following pattern for n is odd
         /*
             *     *  
              *   *  

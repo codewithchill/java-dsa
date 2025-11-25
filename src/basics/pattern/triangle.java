@@ -70,6 +70,26 @@ public class triangle {
         System.out.println();
       }
       System.out.println();
+
+      //* Odd number Triangle */
+      for (int i = 0; i <= num; i++) {
+        for (int j = 1; j <= i; j++)
+          System.out.print((2 * j - 1) + " ");
+        System.out.println();
+      }
+      System.out.println();
+
+      //* Vertically Flipped Triangle */
+      for (int i = 1; i <= num; i++) {
+        for (int j = 1; j <= num; j++) {
+          if (j <= num - i)
+            System.out.print("  ");
+          else
+            System.out.print("* ");
+        }
+        System.out.println();
+      }
+      System.out.println();
     }
   }
 }
