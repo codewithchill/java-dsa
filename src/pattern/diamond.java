@@ -8,6 +8,7 @@ public class diamond {
       System.out.print("Enter number: ");
       int rows = sc.nextInt();
 
+      //? Can also be done using nsp/nst method
       //* Upper Pyramid */
       for (int i = 1; i <= rows; i++) {
         for (int j = 1; j <= (rows - i + 1); j++)
