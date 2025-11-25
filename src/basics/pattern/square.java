@@ -49,14 +49,14 @@ public class square {
         System.out.println("------------");
       }
       if (n % 2 != 0) {
-        //? Print the following pattern for n is odd
+        // ? Print the following pattern for n is odd
         /*
-            *     *  
-             *   *  
-               *
-             *   *  
-            *     *  
-        */
+         * *
+         * *
+         *
+         * *
+         * *
+         */
         for (int i = 1; i <= n; i++) {
           for (int j = 1; j <= n; j++) {
             if (i == j || j == (n - i + 1))
@@ -68,6 +68,26 @@ public class square {
         }
         System.out.println("------------");
       }
+
+      //* Rhombus */
+      for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= n - i; j++)
+          System.out.print("  ");
+        for (int j = 1; j <= n; j++)
+          System.out.print("* ");
+        System.out.println();
+      }
+      System.out.println("------------");
+
+      //* Special Structure */
+      for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= n - i; j++)
+          System.out.print("  ");
+        for (int j = i; j <= n; j++)
+          System.out.print("* ");
+        System.out.println();
+      }
+      System.out.println("------------");
     }
   }
 }
